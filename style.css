@@ -1,0 +1,115 @@
+
+    /*bottom right, #f6d166, #fda283*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+body {
+    background: rgb(246,209,102);
+    background: linear-gradient(106deg, rgba(246,209,102,1) 0%, rgba(249,189,116,1) 50%, rgba(253,162,131,1) 100%);
+}
+
+.title {
+    margin-top: 50px;
+    font-family: "Poppins";
+    font-size: 72px;
+    color: white;
+    text-align: center;
+}
+
+.add-todo {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+#todo {
+    padding: 5px 20px;
+    width: 400px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+#btn-add {
+    width: 100px;
+    background: #06d6a0;
+    border: none;
+    padding: 5px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+#btn-add:hover {
+    background: #08916c;
+    transition: all .2s;
+}
+
+.subtitle {
+    font-family: "Poppins";
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 20px;
+    line-height: 0.1;
+    padding: 20px;
+    background-color: white;
+    width:  300px;
+    font-family: "Poppins";
+}
+
+.btn-complete {
+    background-color: #06d6a0;
+    color: white;
+    font-size: 20px;
+    padding: 11px;
+    line-height: 0.1;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.btn-delete {
+    background-color: #fe6d47;
+    color: white;
+    font-size: 20px;
+    padding: 11px;
+    line-height: 0.1;
+    border: none;
+    cursor: pointer;
+}
+.buttons {
+    display: flex;
+    
+}
+
+.checked {
+    opacity: 0.5;
+}
+
+.todo-item.deletion {
+    animation: opacity 1s ease-in-out;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
